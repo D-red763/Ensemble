@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2017.2.2 (Build 865U)" ts="2021-02-28 00:41:54">
+<Class name="Tongji.KY.SoapExchange.KYQDServiceRule">
+<Description>
+</Description>
+<Super>Ens.Rule.Definition</Super>
+<TimeChanged>65336,38766.851264</TimeChanged>
+<TimeCreated>64264,37695.411577</TimeCreated>
+
+<Parameter name="RuleAssistClass">
+<Default>EnsLib.MsgRouter.VDocRuleAssist</Default>
+</Parameter>
+
+<XData name="RuleDefinition">
+<XMLNamespace>http://www.intersystems.com/rule</XMLNamespace>
+<Data><![CDATA[
+<ruleDefinition alias="" context="EnsLib.MsgRouter.VDocRoutingEngine" production="">
+<variable name="tOriginDataSource"></variable>
+<variable name="tEventType"></variable>
+<ruleSet name="HQSServiceRule" effectiveBegin="" effectiveEnd="">
+<assign property="@tEventType" value="Document.{/Request/MessageHeader/EventType}"></assign>
+<trace value="@tEventType"></trace>
+<assign property="@tOriginDataSource" value="Document.{/Request/MessageBody/OriginDataSource}"></assign>
+<trace value="@tOriginDataSource"></trace>
+<rule name="SelectDataSource" disabled="false">
+<when condition="@tOriginDataSource=&quot;NSDP&quot;">
+<send transform="" target="KYSQLFromNSDP"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;DOCARE&quot;">
+<send transform="" target="KYSQLFromDocare"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;ODOCARE&quot;">
+<send transform="" target="KYSQLFromODocare"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;RIS&quot;">
+<send transform="" target="KYSQLFromRIS"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;EGD&quot;">
+<send transform="" target="KYSQLFromEGD"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;LIS&quot;">
+<send transform="" target="KYSQLFromLIS"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;PATH&quot;">
+<send transform="" target="KYSQLFromPath"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;ECG&quot;">
+<send transform="" target="KYSQLFromECG"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;ECG2&quot;">
+<send transform="" target="KYSQLFromECG2"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;OEMR&quot;">
+<send transform="" target="KYSQLFromOEMR"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;OHIS&quot;">
+<send transform="" target="KYSQLFromOHIS"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;MHIS&quot;">
+<send transform="" target="KYSQLFromMHIS"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;NHIS&quot;">
+<send transform="" target="KYSQLFromNHIS"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;NEMR&quot;">
+<send transform="" target="KYSQLFromNEMRContent"></send>
+<return></return>
+</when>
+<when condition="@tOriginDataSource=&quot;TCT&quot;">
+<send transform="" target="KYSQLFromQPTCT"></send>
+<return></return>
+</when>
+</rule>
+</ruleSet>
+</ruleDefinition>
+]]></Data>
+</XData>
+</Class>
+</Export>
