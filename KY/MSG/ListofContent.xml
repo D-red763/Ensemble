@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2017.2.2 (Build 865U)" ts="2021-02-28 00:41:12">
+<Class name="Tongji.KY.MSG.ListofContent">
+<Super>Ens.Response</Super>
+<TimeChanged>65316,41977.302514</TimeChanged>
+<TimeCreated>63755,39817.565229</TimeCreated>
+
+<Property name="ContentList">
+<Type>ContentMessageBody</Type>
+<Collection>list</Collection>
+</Property>
+
+<Storage name="Default">
+<Type>%Library.CacheStorage</Type>
+<DefaultData>ListofContentDefaultData</DefaultData>
+<Data name="ListofContentDefaultData">
+<Subscript>"ListofContent"</Subscript>
+<Value name="1">
+<Value>ContentList</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+</Export>

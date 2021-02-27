@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2017.2.2 (Build 865U)" ts="2021-02-28 00:41:04">
+<Class name="Tongji.KY.MSG.ContentMessageBody">
+<Super>Ens.Response</Super>
+<TimeChanged>65167,38755.686976</TimeChanged>
+<TimeCreated>63755,39817.565229</TimeCreated>
+
+<Property name="HOSPITALCODE">
+<Type>%String</Type>
+</Property>
+
+<Property name="PATIENTID">
+<Type>%String</Type>
+</Property>
+
+<Property name="PATIENTNO">
+<Type>%String</Type>
+</Property>
+
+<Property name="INPATIENTNO">
+<Type>%String</Type>
+</Property>
+
+<Property name="DOCUMENTID">
+<Type>%String</Type>
+</Property>
+
+<Property name="DOCUMENTNAME">
+<Type>%String</Type>
+</Property>
+
+<Property name="TYPENAME">
+<Type>%String</Type>
+</Property>
+
+<Property name="DOCUMENTCONTENT">
+<Type>%GlobalCharacterStream</Type>
+<Parameter name="CONTENT" value="MIXED"/>
+</Property>
+
+<Property name="CREATEDATE">
+<Type>%String</Type>
+</Property>
+
+<Property name="DEPTCODE">
+<Type>%String</Type>
+</Property>
+
+<Property name="DEPTNAME">
+<Type>%String</Type>
+</Property>
+
+<Property name="DOCTORCODE">
+<Type>%String</Type>
+</Property>
+
+<Property name="DOCTORNAME">
+<Type>%String</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Library.CacheStorage</Type>
+<DefaultData>ContentMessageBodyDefaultData</DefaultData>
+<Data name="ContentMessageBodyDefaultData">
+<Structure>listnode</Structure>
+<Subscript>"ContentMessageBody"</Subscript>
+<Value name="1">
+<Value>HOSPITALCODE</Value>
+</Value>
+<Value name="2">
+<Value>PATIENTID</Value>
+</Value>
+<Value name="3">
+<Value>PATIENTNO</Value>
+</Value>
+<Value name="4">
+<Value>INPATIENTNO</Value>
+</Value>
+<Value name="5">
+<Value>DOCUMENTID</Value>
+</Value>
+<Value name="6">
+<Value>DOCUMENTNAME</Value>
+</Value>
+<Value name="7">
+<Value>TYPENAME</Value>
+</Value>
+<Value name="8">
+<Value>DOCUMENTCONTENT</Value>
+</Value>
+<Value name="9">
+<Value>CREATEDATE</Value>
+</Value>
+<Value name="10">
+<Value>DEPTCODE</Value>
+</Value>
+<Value name="11">
+<Value>DEPTNAME</Value>
+</Value>
+<Value name="12">
+<Value>DOCTORCODE</Value>
+</Value>
+<Value name="13">
+<Value>DOCTORNAME</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+</Export>
