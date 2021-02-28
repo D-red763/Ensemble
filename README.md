@@ -64,29 +64,36 @@ Ensemble具有JAVA、JDBC环境
 本应用程序以查询患者服务为案例，可进行入站出站协议、查询条件、业务类型都可进行配置丰富实现，来解决查询业务接口问题。
 
 
-English Description
+#English Description
+
 Integrated hospital data extraction business solution based on Ensemble
+
 Summary:
 With the continuous enrichment of hospital information construction content, more and more business coverage, the data requirements of related scientific research projects are also increasing, and the hospital has put forward new requirements for the data management of various business systems.Due to the diverse backgrounds of scientific research projects, the data models and data volumes in the requirements are also different, and the interface development, interface management and code maintenance of each system are becoming more and more complicated.To solve this dilemma, we used Ensemble to integrate the hospital data extraction business solution.The application can be configured to realize the query business interface, greatly reducing the key operation cycle of development, maintenance, implementation and other projects.
+
 Key Applications: Ensemble, SOAP API, ObjectScript, SQL, JDBC, XML Schema
+
 Technical details and application introduction:
-Technical details
+
+Technical details:
 Ensemble supports XML documents as virtual documents.A virtual document is a message that is partially integrated and parsed.This type of message has a standard integration header and standard message properties, such as ID, priority, and SESSIONID.However, the data in the message cannot be used as a message property;Instead, it is stored directly in the global variables used internally for faster processing.
-XML Schema
+XML Schema:
 The program has a DOCTYPE reference to the self-created XML Schema.
-Application link
+Application link:
 https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageHeader.xml
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageBody.xml
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/Result.xml
-SQL access
+
+SQL access:
 Ensemble provides SQL access to data through ObjectScript, REST APIs, and JDBC.
 Application:
 In the data extraction business, companies only provided their own data sources, and then we used Ensemble built-in Adapter, SOAP API, and JDBC to implement SQL access to the data to establish the business interface.
 Application link https://github.com/D-red763/Ensemble/blob/main/KY/Adapter/OutboundAdapterFix.xml
 JDBC
 Link database through JDBC mode for data extraction.
+
 Soap API
 Application:
 The SOAP API provides a standard way for applications running on different operating systems and using different technologies and programming languages to communicate with each other.
