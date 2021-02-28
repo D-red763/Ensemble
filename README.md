@@ -77,8 +77,10 @@ Technical details and application introduction:
 
 Technical details:
 Ensemble supports XML documents as virtual documents.A virtual document is a message that is partially integrated and parsed.This type of message has a standard integration header and standard message properties, such as ID, priority, and SESSIONID.However, the data in the message cannot be used as a message property;Instead, it is stored directly in the global variables used internally for faster processing.
+
 XML Schema:
 The program has a DOCTYPE reference to the self-created XML Schema.
+
 Application link:
 https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml
@@ -88,6 +90,7 @@ https://github.com/D-red763/Ensemble/blob/main/KY/MSG/Result.xml
 
 SQL access:
 Ensemble provides SQL access to data through ObjectScript, REST APIs, and JDBC.
+
 Application:
 In the data extraction business, companies only provided their own data sources, and then we used Ensemble built-in Adapter, SOAP API, and JDBC to implement SQL access to the data to establish the business interface.
 Application link https://github.com/D-red763/Ensemble/blob/main/KY/Adapter/OutboundAdapterFix.xml
@@ -97,11 +100,11 @@ Link database through JDBC mode for data extraction.
 Soap API
 Application:
 The SOAP API provides a standard way for applications running on different operating systems and using different technologies and programming languages to communicate with each other.
-Application link
+Application link"
 https://github.com/D-red763/Ensemble/blob/main/KY/BS/KYQDService.xml
-Using business processes
+Using business processes:
 According to the element path of XML, the data extraction process can be configured by graphical tools.
-Application link
+Application link:
 https://github.com/D-red763/Ensemble/blob/main/KY/Rule/KYQDServiceRule.xml
 Establish application cases
 Application construction:
