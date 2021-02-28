@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2017.2.2 (Build 865U)" ts="2021-02-28 11:56:02">
+<Class name="UserLib.SQL.OutboundAdapterFix">
+<ProcedureBlock>1</ProcedureBlock>
+<Super>EnsLib.SQL.OutboundAdapter</Super>
+<TimeChanged>64960,60384.498176</TimeChanged>
+<TimeCreated>62648,57670.230261</TimeCreated>
+
+<Method name="isNetErr">
+<Description>
+加入汉语支持</Description>
+<ClassMethod>1</ClassMethod>
+<FormalSpec>pErrorText:%String</FormalSpec>
+<ReturnType>%Boolean</ReturnType>
+<Implementation><![CDATA[
+	Set is=##class(%Library.SQLGatewayConnection).IsTextNetworkError(pErrorText)
+	set tErr=$P(pErrorText,"JDBC Gateway ",2)
+	if $F(tErr,"套接字") set is=1
+	if $F(tErr,"关闭的连接") set is=1
+	if $F(tErr,"prepareStatement() error") set is=1
+	if $F(tErr,"prepareProc() error") set is=1
+	if $F(tErr,"SetConnectOption") set is=1
+	if $F(tErr,"commit() error") set is=1
+	if $F(tErr,"Disconnected from Gateway") set is=1
+	If is { $$$sysTRACE("Assuming network disconnect error based on: "_pErrorText) }
+	Else {  $$$catTRACE("protocol","NOT assuming network disconnect error based on: "_pErrorText) }
+	Quit is
+]]></Implementation>
+</Method>
+
+<Method name="SetConnectAttr">
+<FormalSpec>pAttrName:%String,pVal:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	#; Connect if not already connected
+	Set tSC=..Connect(..ConnectTimeout) If $$$ISERR(tSC) Set:$$$StatusEquals(tSC,$$$EnsErrOutConnectExpired,$$$EnsErrOutConnectFailed)&&..BusinessHost.%Extends("Ens.BusinessOperation") ..BusinessHost.Retry=1  Quit tSC
+
+	$$$sysTRACE("Setting connection attribute "_pAttrName_":"_pVal)
+	Set tSC=..%Connection.SetConnectOption($G(..attrIDs($ZCVT(pAttrName,"L")),pAttrName),pVal)
+	If $$$ISERR(tSC) {
+		Set tHS=""
+		Set tSC=..addErrorList(tSC,tHS,.tNetErr)
+		If 'tNetErr {If ..isNetErr($$$StatusText(tSC)) set tNetErr=1}
+		If tNetErr Do ..Disconnect()  Set:..BusinessHost.%Extends("Ens.BusinessOperation") ..BusinessHost.Retry=1
+	}
+	Quit tSC
+]]></Implementation>
+</Method>
+</Class>
+</Export>
