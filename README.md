@@ -93,20 +93,27 @@ Ensemble provides SQL access to data through ObjectScript, REST APIs, and JDBC.
 
 Application:
 In the data extraction business, companies only provided their own data sources, and then we used Ensemble built-in Adapter, SOAP API, and JDBC to implement SQL access to the data to establish the business interface.
+
 Application link https://github.com/D-red763/Ensemble/blob/main/KY/Adapter/OutboundAdapterFix.xml
+
 JDBC
 Link database through JDBC mode for data extraction.
 
 Soap API
+
 Application:
 The SOAP API provides a standard way for applications running on different operating systems and using different technologies and programming languages to communicate with each other.
-Application link"
+
+Application link:
 https://github.com/D-red763/Ensemble/blob/main/KY/BS/KYQDService.xml
+
 Using business processes:
 According to the element path of XML, the data extraction process can be configured by graphical tools.
-Application link:
-https://github.com/D-red763/Ensemble/blob/main/KY/Rule/KYQDServiceRule.xml
+
+Application link:https://github.com/D-red763/Ensemble/blob/main/KY/Rule/KYQDServiceRule.xml
+
 Establish application cases
+
 Application construction:
 Basic environment
 Ensemble Version Information: Ensemble-2017.2.2.865.0-Win_x64
