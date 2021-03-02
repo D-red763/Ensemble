@@ -17,12 +17,17 @@ XML Schema:
 The program has a DOCTYPE reference to the self-created XML Schema.
 
 Application link:
+
 https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd
 
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml
+
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageHeader.xml
+
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageBody.xml
+
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/Result.xml
+
 
 SQL access:
 Ensemble provides SQL access to data through ObjectScript, REST APIs, and JDBC.
@@ -87,11 +92,17 @@ Ensemble支持将XML文档作为虚拟文档。虚拟文档是一种仅部分集
 XML Schema
 程序中具有自建立XML Schema的DocType引用。
 应用链接
+
 https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd
+
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml
+
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageHeader.xml
+
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageBody.xml
+
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/Result.xml
+
 
 SQL访问
 Ensemble通过 ObjectScript、REST API及JDBC提供对数据的SQL访问.
