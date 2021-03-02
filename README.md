@@ -16,12 +16,9 @@ Ensemble supports XML documents as virtual documents.A virtual document is a mes
 XML Schema:
 The program has a DOCTYPE reference to the self-created XML Schema.
 
-Application link:
-
-https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd
-
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml
-
+Application link:  
+https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd  
+https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml  
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageHeader.xml
 
 https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageBody.xml
