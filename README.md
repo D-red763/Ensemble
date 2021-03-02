@@ -57,8 +57,10 @@ In Ensemble > XMLSchema, import XMLSchema file, build XML structure standard.
 ④ Import code  
 Import the code in KY, compile and open Production,  
 Note: Modify BO configuration information (DNS), configure JavaGateWay, etc  
+
 Application testing  
 You can use the SOAPUI tool (other tools are also available) for testing and verification  
+
 Application of summary  
 This application takes the query of patient services as the case, and can carry out configuration rich implementation of inbound and outbound protocols, query conditions and business types to solve the query business interface problem.  
 
