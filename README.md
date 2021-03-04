@@ -110,7 +110,7 @@ https://github.com/D-red763/Ensemble/blob/main/KY/Rule/KYQDServiceRule.xml
 建立应用案例  
 应用搭建：  
 基本环境  
-IRIS版本信息：ensemble-2017.2.2.865.0-win_x64  
+IRIS版本信息：IRIS_Community-2020.1.0.215.0-win_x64 
 且具有JAVA、JDBC环境  
 可采用SoapUI进行测试  
 安装步骤  
