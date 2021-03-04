@@ -50,7 +50,7 @@ Installation steps
 ① Establish a SOAP service  
 Create a new Web application.  
 This step can be seen in the image:   
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/%E5%88%9B%E5%BB%BAWeb%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JDBC%20installation.png  
 (2) configure SQL - JDBC  
 Create an SQL connection to the test database Oracle.  
 ③ Import XML Schema  
@@ -58,12 +58,12 @@ In  Interoperability > XMLSchema, import XMLSchema file, build XML structure sta
 ④ Import code  
 Import the code in KY, compile and open Production,  
 Note: Modify BO configuration information (DNS), configure JavaGateWay, etc  
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/JDBC%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE.png  
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/JavaGateway.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JDBC%20installation.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JavaGateway.png  
 
 Application testing  
 You can use the SOAPUI tool (other tools are also available) for testing and verification  
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/SoapUI%E6%B5%8B%E8%AF%95.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/SoapUITesting.png  
 
 Application of summary  
 This application takes XML Schema as the message carrier, combined with the built-in XML parsing tool of IRIS, can manage the configuration of multiple data sources (BO) through one service (BS) and one set of codes, and solve the problem of data extraction from different sources.  
@@ -121,7 +121,7 @@ IRIS版本信息：IRIS_Community-2020.1.0.215.0-win_x64
 ① 建立Soap服务  
 新建Web应用程序。  
 该步骤可见图片：  
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/%E5%88%9B%E5%BB%BAWeb%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JDBC%20installation.png  
 ② 配置SQL-JDBC  
 建立SQL连接，连接测试数据库Oracle。  
 ③ 导入XML Schema  
@@ -129,12 +129,12 @@ https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8
 ④ 导入代码  
 导入KY中的代码，编译，打开Production,  
 注意：修改BO配置信息（DNS）、配置JavaGateway等  
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/JDBC%E9%A9%B1%E5%8A%A8%E9%85%8D%E7%BD%AE.png  
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/JavaGateway.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JDBC%20installation.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JavaGateway.png  
 
 应用测试  
 可采用SoapUI工具（其他工具也可以）进行测试验证 
-https://github.com/D-red763/IRISApplication/blob/main/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5/SoapUI%E6%B5%8B%E8%AF%95.png  
+https://github.com/D-red763/IRISApplication/blob/main/Application%20health/SoapUITesting.png  
 
 应用总结  
 本应用程序以XML Schema为消息载体，结合IRIS内置的XML解析工具，可通过一个服务（BS）、一套代码对多个数据源（BO）进行配置管理，来解决不同来源数据的提取问题。  
