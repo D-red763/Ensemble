@@ -148,7 +148,7 @@ https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JDBC%
 https://github.com/D-red763/IRISApplication/blob/main/Application%20health/JavaGateway.png  
 
 应用测试  
-可采用SoapUI工具（其他工具也可以）进行测试验证 
+可采用SoapUI工具（其他工具也可以）进行测试验证  
 https://github.com/D-red763/IRISApplication/blob/main/Application%20health/SoapUITesting.png  
 
 应用总结  
