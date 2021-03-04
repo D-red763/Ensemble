@@ -14,17 +14,17 @@ IRIS supports XML documents as virtual documents.A virtual document is a message
 XML Schema  
 The program has a DOCTYPE reference to the self-created XML Schema.  
 Application link  
-https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageHeader.xml  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageBody.xml  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/Result.xml  
+https://github.com/D-red763/IRISApplication/blob/main/XML%20Schema/TongjiExchange.xsd  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/ResponseDatasetMessage.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/ResponseMessageHeader.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/ResponseMessageBody.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/Result.xml  
 
 SQL access  
 Iris provides SQL access to data through ObjectScript, REST APIs, and JDBC.  
 Application:  
 In the data extraction business, companies only provided their own data sources, and then we used Ensemble built-in Adapter, SOAP API, and JDBC to implement SQL access to the data to establish the business interface.  
-Application link https://github.com/D-red763/Ensemble/blob/main/KY/Adapter/OutboundAdapterFix.xml  
+Application link https://github.com/D-red763/IRISApplication/blob/main/KY/Adapter/OutboundAdapterFix.xml  
 JDBC  
 Link database through JDBC mode for data extraction. 
 
@@ -32,17 +32,17 @@ Soap API
 Application:  
 The SOAP API provides a standard way for applications running on different operating systems and using different technologies and programming languages to communicate with each other.  
 Application link  
-https://github.com/D-red763/Ensemble/blob/main/KY/BS/KYQDService.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/BS/KYQDService.xml  
 
 Using business processes  
 According to the element path of XML, the data extraction process can be configured by graphical tools.  
 Application link  
-https://github.com/D-red763/Ensemble/blob/main/KY/Rule/KYQDServiceRule.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/Rule/KYQDServiceRule.xml  
 
 Establish application cases  
 Application construction:  
 Basic environment  
-Iris version information: Ensemble - 2017.2.2.865.0-Win_x64  
+Iris version information: IRIS_Community-2020.1.0.215.0-win_x64   
 And has Java, JDBC environment  
 You can use SOAPUI for testing  
 
@@ -80,18 +80,18 @@ IRIS支持将XML文档作为虚拟文档。虚拟文档是一种仅部分集成�
 XML Schema  
 程序中具有自建立XML Schema的DocType引用。  
 应用链接  
-https://github.com/D-red763/Ensemble/blob/main/XML%20Schema/TongjiExchange.xsd  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseDatasetMessage.xml  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageHeader.xml  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/ResponseMessageBody.xml  
-https://github.com/D-red763/Ensemble/blob/main/KY/MSG/Result.xml  
+https://github.com/D-red763/IRISApplication/blob/main/XML%20Schema/TongjiExchange.xsd  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/ResponseDatasetMessage.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/ResponseMessageHeader.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/ResponseMessageBody.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/Result.xml  
 
 
 SQL访问  
 IRIS通过 ObjectScript、REST API及JDBC提供对数据的SQL访问.  
 应用：  
 在数据提取业务中，公司们只提供各自的数据源，之后我们采用Ensemble内置Adapter、Soap API及JDBC来实现对数据的SQL访问，来建立业务接口。  
-应用链接 https://github.com/D-red763/Ensemble/blob/main/KY/Adapter/OutboundAdapterFix.xml  
+应用链接 https://github.com/D-red763/IRISApplication/blob/main/KY/Adapter/OutboundAdapterFix.xml  
 JDBC  
 通过JDBC方式链接数据库，进行数据提取。  
 
@@ -99,12 +99,12 @@ Soap API
 应用:  
 SOAP API提供了一种标准的方法，使得运行在不同的操作系统并使用不同的技术和编程语言的应用程序可以互相进行通信。  
 应用链接  
-https://github.com/D-red763/Ensemble/blob/main/KY/BS/KYQDService.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/BS/KYQDService.xml  
 
 使用业务流程  
 根据XML的元素路径进行取值，可利用图形化处理工具对数据提取过程进行配置管理。  
 应用链接  
-https://github.com/D-red763/Ensemble/blob/main/KY/Rule/KYQDServiceRule.xml  
+https://github.com/D-red763/IRISApplication/blob/main/KY/Rule/KYQDServiceRule.xml  
 
 
 建立应用案例  
