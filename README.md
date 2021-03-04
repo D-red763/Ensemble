@@ -44,7 +44,14 @@ Application construction:
 Basic environment  
 Iris version information: IRIS_Community-2020.1.0.215.0-win_x64   
 And has Java, JDBC environment  
-You can use SOAPUI for testing  
+
+IRIS installation:  
+① Configure IIS:  
+https://github.com/D-red763/IRISApplication/tree/main/Config%20IIS%20and%20Website  
+② Instance installation:  
+https://github.com/D-red763/IRISApplication/tree/main/Instance%20installation  
+③ Configure Namespace:  
+https://github.com/D-red763/IRISApplication/tree/main/Config%20Namespace  
 
 Installation steps  
 ① Establish a SOAP service  
@@ -116,8 +123,16 @@ https://github.com/D-red763/IRISApplication/blob/main/KY/Rule/KYQDServiceRule.xm
 基本环境  
 IRIS版本信息：IRIS_Community-2020.1.0.215.0-win_x64 
 且具有JAVA、JDBC环境  
-可采用SoapUI进行测试  
-安装步骤  
+
+程序安装：  
+①配置IIS：  
+https://github.com/D-red763/IRISApplication/tree/main/Config%20IIS%20and%20Website
+②实例安装：  
+https://github.com/D-red763/IRISApplication/tree/main/Instance%20installation  
+③配置Namespace：  
+https://github.com/D-red763/IRISApplication/tree/main/Config%20Namespace  
+
+应用步骤  
 ① 建立Soap服务  
 新建Web应用程序。  
 该步骤可见图片：  
