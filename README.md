@@ -126,7 +126,7 @@ IRIS版本信息：IRIS_Community-2020.1.0.215.0-win_x64
 
 程序安装：  
 ①配置IIS：  
-https://github.com/D-red763/IRISApplication/tree/main/Config%20IIS%20and%20Website
+https://github.com/D-red763/IRISApplication/tree/main/Config%20IIS%20and%20Website  
 ②实例安装：  
 https://github.com/D-red763/IRISApplication/tree/main/Instance%20installation  
 ③配置Namespace：  
