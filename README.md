@@ -21,7 +21,7 @@ https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/ResponseMessageBody
 https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/Result.xml  
 
 SQL access  
-Iris provides SQL access to data through ObjectScript, REST APIs, and JDBC.  
+Iris provides SQL access to data through ObjectScript, SOAP APIs, and JDBC.  
 Application:  
 In the data extraction business, companies only provided their own data sources, and then we used Ensemble built-in Adapter, SOAP API, and JDBC to implement SQL access to the data to establish the business interface.  
 Application link https://github.com/D-red763/IRISApplication/blob/main/KY/Adapter/OutboundAdapterFix.xml  
@@ -53,7 +53,7 @@ This step can be seen in the image: Application running/Creating Web application
 (2) configure SQL - JDBC  
 Create an SQL connection to the test database Oracle.  
 ③ Import XML Schema  
-In Ensemble > XMLSchema, import XMLSchema file, build XML structure standard.  
+In  Interoperability > XMLSchema, import XMLSchema file, build XML structure standard.  
 ④ Import code  
 Import the code in KY, compile and open Production,  
 Note: Modify BO configuration information (DNS), configure JavaGateWay, etc  
@@ -88,7 +88,7 @@ https://github.com/D-red763/IRISApplication/blob/main/KY/MSG/Result.xml
 
 
 SQL访问  
-IRIS通过 ObjectScript、REST API及JDBC提供对数据的SQL访问.  
+IRIS通过 ObjectScript、SOAP API及JDBC提供对数据的SQL访问.  
 应用：  
 在数据提取业务中，公司们只提供各自的数据源，之后我们采用Ensemble内置Adapter、Soap API及JDBC来实现对数据的SQL访问，来建立业务接口。  
 应用链接 https://github.com/D-red763/IRISApplication/blob/main/KY/Adapter/OutboundAdapterFix.xml  
@@ -120,7 +120,7 @@ IRIS版本信息：IRIS_Community-2020.1.0.215.0-win_x64
 ② 配置SQL-JDBC  
 建立SQL连接，连接测试数据库Oracle。  
 ③ 导入XML Schema  
-在Ensemble > XMLSchema ，导入XML Schema文件，自建XML结构标准。  
+在 Interoperability > XMLSchema ，导入XML Schema文件，自建XML结构标准。  
 ④ 导入代码  
 导入KY中的代码，编译，打开Production,  
 注意：修改BO配置信息（DNS）、配置JavaGateway等  
